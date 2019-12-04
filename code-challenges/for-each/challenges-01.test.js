@@ -61,12 +61,18 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
+  if (num % 3 === 2)
+  arr.pop();
 
   // Solution code here...
 };
 
 const removeElements = (arr, callback) => {
+  for(var i=0, i<arr.length;i++){
+    callback
+  }
   // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,10 +80,20 @@ CHALLENGE 4
 
 Write a function named removeWithForEach that produces the same output as challenge 3, but uses forEach.
 ------------------------------------------------------------------------------------------------ */
-
+//[1,2,3,4,5,6,7,8,9,10], removeOne
+//arr ===[1,2,3 etc]
+//callback === removeOne
+//removeOne has a signature of (value,arr)
 const removeWithForEach = (arr, callback) => {
+  //cb for foreach has a signature of
+  //function(val,index,array)
+  arr.forEach(function(val,index,array){
+    callback(val,array);
+  })
+  return arr;
+}; 
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -129,6 +145,7 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
+  
   // Solution code here...
 };
 
