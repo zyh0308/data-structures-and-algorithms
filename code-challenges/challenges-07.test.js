@@ -10,26 +10,26 @@ You may choose to complete this challenge using a for loop, for...in syntax, or 
 For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and 2 ^ 3 = 8.
 ------------------------------------------------------------------------------------------------ */
 
-	
+
 const
-forLoopTwoToThe
-= (arr)
-=> {
+  forLoopTwoToThe
+    = (arr)
+      => {
 
-let newArray
-= [];
+      let newArray
+        = [];
 
-for (let value
-of arr) {
+      for (let value
+        of arr) {
 
-newArray.push(2
-** value);
+        newArray.push(2
+          ** value);
 
-}
+      }
 
-return newArray;
+      return newArray;
 
-};
+    };
 
 
 
@@ -39,29 +39,29 @@ CHALLENGE 2
 Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 1, but uses forEach instead of a for loop.
 ------------------------------------------------------------------------------------------------ */
 
-	
-const
-forEachTwoToThe
-= (arr)
-=> {
 
 const
-newArray
-= [];
+  forEachTwoToThe
+    = (arr)
+      => {
 
-arr.forEach(
-ele 
-=> {
+      const
+        newArray
+          = [];
 
-newArray.push (
-2
-** ele);
+      arr.forEach(
+        ele
+          => {
 
-})
+          newArray.push(
+            2
+            ** ele);
 
-return newArray;
+        })
 
-};
+      return newArray;
+
+    };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -72,25 +72,25 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 
 const
-mapTwoToThe
-= (arr)
-=> {
+  mapTwoToThe
+    = (arr)
+      => {
 
-const
-newArray
-=
-arr.map (number
-=> {
+      const
+        newArray
+          =
+          arr.map(number
+            => {
 
-return
-2
-** number;
+            return
+            2
+              ** number;
 
-})
+          })
 
-return newArray;
+      return newArray;
 
-};
+    };
 
 
 
@@ -104,26 +104,26 @@ Read the MDN documentation on String.charCodeAt() if necessary.
 For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
-	
+
 const
-charCode
-= (arr)
-=> {
+  charCode
+    = (arr)
+      => {
 
-let newArray
-= [];
+      let newArray
+        = [];
 
-arr.forEach (
-ele 
-=> {
+      arr.forEach(
+        ele
+          => {
 
-newArray.push (ele.charCodeAt())
+          newArray.push(ele.charCodeAt())
 
-})
+        })
 
-return newArray;
+      return newArray;
 
-};
+    };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -137,45 +137,45 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
 const
-evenOdd
-= (arr)
-=> {
+  evenOdd
+    = (arr)
+      => {
 
-const
-newArray
-=
-arr.map (value
-=> {
+      const
+        newArray
+          =
+          arr.map(value
+            => {
 
-if (typeof(value)
-!==
-'number'){
+            if (typeof (value)
+              !==
+              'number') {
 
-return
-'N/A'
+              return
+              'N/A'
 
-} else
-if (value
-%
-2
-===
-0) {
+            } else
+              if (value
+                %
+                2
+                ===
+                0) {
 
-return
-'even'
+                return
+                'even'
 
-} else {
+              } else {
 
-return
-'odd'
+                return
+                'odd'
 
-}
+              }
 
-})
+          })
 
-return newArray;
+      return newArray;
 
-};
+    };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -190,102 +190,102 @@ extractAbilities(snorlaxAbilities.abilities)
 ------------------------------------------------------------------------------------------------ */
 
 const
-snorlaxAbilities
-= {
+  snorlaxAbilities
+    = {
 
-abilities: [
+    abilities: [
 
-{
+      {
 
-slot:
-3,
+        slot:
+          3,
 
-is_hidden:
-true,
+        is_hidden:
+          true,
 
-ability: {
+        ability: {
 
-url:
-'https://pokeapi.co/api/v2/ability/82/',
+          url:
+            'https://pokeapi.co/api/v2/ability/82/',
 
-name:
-'gluttony',
+          name:
+            'gluttony',
 
-},
+        },
 
-},
+      },
 
-{
+      {
 
-slot:
-2,
+        slot:
+          2,
 
-is_hidden:
-false,
+        is_hidden:
+          false,
 
-ability: {
+        ability: {
 
-url:
-'https://pokeapi.co/api/v2/ability/56/',
+          url:
+            'https://pokeapi.co/api/v2/ability/56/',
 
-name:
-'cute charm',
+          name:
+            'cute charm',
 
-},
+        },
 
-},
+      },
 
-{
+      {
 
-slot:
-1,
+        slot:
+          1,
 
-is_hidden:
-false,
+        is_hidden:
+          false,
 
-ability: {
+        ability: {
 
-url:
-'https://pokeapi.co/api/v2/ability/17/',
+          url:
+            'https://pokeapi.co/api/v2/ability/17/',
 
-name:
-'immunity',
+          name:
+            'immunity',
 
-},
+        },
 
-},
+      },
 
-],
+    ],
 
-name:
-'snorlax',
+    name:
+      'snorlax',
 
-weight:
-4600,
+    weight:
+      4600,
 
-};
+  };
 
 
 const
-extractAbilities
-= (arr)
-=> {
+  extractAbilities
+    = (arr)
+      => {
 
-const
-newArray
-=
-arr.map (
-value=> {
+      const
+        newArray
+          =
+          arr.map(
+            value => {
 
 
-return
-value.ability.name;
+              return
+              value.ability.name;
 
-})
+            })
 
-return newArray;
+      return newArray;
 
-};
+    };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -301,110 +301,112 @@ Here is an example of a single array element: { name: 'speed', total: 35 }
 ------------------------------------------------------------------------------------------------ */
 
 const
-snorlaxStats
-= {
+  snorlaxStats
+    = {
 
-stats: [
+    stats: [
 
-{
+      {
 
-stat: {
+        stat: {
 
-url:
-'https://pokeapi.co/api/v2/stat/6/',
+          url:
+            'https://pokeapi.co/api/v2/stat/6/',
 
-name:
-'speed',
+          name:
+            'speed',
 
-},
+        },
 
-effort:
-5,
+        effort:
+          5,
 
-baseStat:
-30,
+        baseStat:
+          30,
 
-},
+      },
 
-{
+      {
 
-stat: {
+        stat: {
 
-url:
-'https://pokeapi.co/api/v2/stat/5/',
+          url:
+            'https://pokeapi.co/api/v2/stat/5/',
 
-name:
-'special-defense',
+          name:
+            'special-defense',
 
-},
+        },
 
-effort:
-2,
+        effort:
+          2,
 
-baseStat:
-110,
+        baseStat:
+          110,
 
-},
+      },
 
-{
+      {
 
-stat: {
+        stat: {
 
-url:
-'https://pokeapi.co/api/v2/stat/4/',
+          url:
+            'https://pokeapi.co/api/v2/stat/4/',
 
-name:
-'special-attack',
+          name:
+            'special-attack',
 
-},
+        },
 
-effort:
-9,
+        effort:
+          9,
 
-baseStat:
-65,
+        baseStat:
+          65,
 
-},
+      },
 
-],
+    ],
 
-name:
-'snorlax',
+    name:
+      'snorlax',
 
-weight:
-4600,
+    weight:
+      4600,
 
-};
+  };
 
-
-const
-extractStats
-= (arr)
-=> {
-
-// {stat name, total}
-
-// total = effort + basestat
 
 const
-nameTotal
-=
-arr.map (
-value 
-=> {
+  extractStats
+    = (arr)
+      => {
 
-return {'name':
-value.stat.name,'total':
-value.effort
-+
-value. 
-baseStat};
+      // {stat name, total}
 
-})
+      // total = effort + basestat
 
-return nameTotal;
+      const
+        nameTotal
+          =
+          arr.map(
+            value
+              => {
 
-};
+              return {
+                'name':
+                  value.stat.name, 'total':
+                  value.effort
+                  +
+                  value.
+                    baseStat
+              };
+
+            })
+
+      return nameTotal;
+
+    };
 
 
 
@@ -455,29 +457,29 @@ describe('Testing challenge 3', () => {
 
 describe('Testing challenge 4', () => {
   test('It should return an array containing the character code for each letter', () => {
-    expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([ 67, 111, 100, 101, 51, 48, 49 ]);
+    expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([67, 111, 100, 101, 51, 48, 49]);
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1']).length).toStrictEqual(7);
   });
 });
 
 describe('Testing challenge 5', () => {
   test('It should return an array containing the keys from an object', () => {
-    expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual([ 'odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd' ]);
+    expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual(['odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd']);
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541]).length).toStrictEqual(8);
   });
 
   test('It should work with all odd numbers', () => {
-    expect(evenOdd([1, 3, 5, 7, 9])).toStrictEqual([ 'odd', 'odd', 'odd', 'odd', 'odd' ]);
+    expect(evenOdd([1, 3, 5, 7, 9])).toStrictEqual(['odd', 'odd', 'odd', 'odd', 'odd']);
     expect(evenOdd([1, 3, 5, 7, 9]).length).toStrictEqual(5);
   });
 
   test('It should work with all even numbers', () => {
-    expect(evenOdd([2, 4, 6, 8, 10])).toStrictEqual([ 'even', 'even', 'even', 'even', 'even' ]);
+    expect(evenOdd([2, 4, 6, 8, 10])).toStrictEqual(['even', 'even', 'even', 'even', 'even']);
     expect(evenOdd([2, 4, 6, 8, 10]).length).toStrictEqual(5);
   });
 
   test('It should return the string "N/A" if a non-number is included in the array', () => {
-    expect(evenOdd([5, 8, 2, 'hi'])).toStrictEqual([ 'odd', 'even', 'even', 'N/A' ]);
+    expect(evenOdd([5, 8, 2, 'hi'])).toStrictEqual(['odd', 'even', 'even', 'N/A']);
     expect(evenOdd([5, 8, 2, 'hi']).length).toStrictEqual(4);
   });
 });
