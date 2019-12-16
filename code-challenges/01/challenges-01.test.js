@@ -43,9 +43,12 @@ const addValues = (arr, value) => {
 };
 
 const addNumbers = (num, arr, times, callback) => {
-
-
-  // Solution code here...
+  let i = 0;
+  while (i < times) {
+    callback(arr, num);
+    i++;
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,8 +71,8 @@ const removeOne = (num, arr) => {
 };
 
 const removeElements = (arr, callback) => {
-  for(var i=0, i<arr.length;i++){
-    callback
+  for(var i=0; i < arr.length;i++){
+    callback(arr[i],arr);
   }
   // Solution code here...
 
@@ -106,7 +109,12 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
+  arr.forEach(elem => {
+    if (elem % 3 === 2) {
+      arr.pop();
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -127,8 +135,15 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  const list = [];
+  availableItems.forEach(elem => {
+    if (elem.available) {
+      list.push(elem.name);
+    }
+  })
+  return list;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -145,10 +160,20 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  
-  // Solution code here...
+  const out = [];
+  arr.forEach((elem) => {
+    if (elem % 3 === 0 && elem % 5 === 0) {
+      out.push('Fizz Buzz');
+    } else if (elem % 3 === 0) {
+      out.push('Fizz');
+    } else if (elem % 5 === 0) {
+      out.push('Buzz');
+    } else {
+      out.push(elem);
+    }
+  })
+  return out;
 };
-
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
