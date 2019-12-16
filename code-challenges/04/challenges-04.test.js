@@ -45,7 +45,13 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  const selectCities = [];
+  arr.forEach(cities => {
+    if (/[A-J]/.test(cities[0])) {
+      selectCities.push(cities);
+    }
+  })
+  return selectCities;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -59,10 +65,13 @@ If the user enters any of these four inputs, return true. For any other input, r
 
 Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
-
 const matchMonth = (input) => {
-  // Solution code here...
+  if (/^oct$/i.test(input) || /^october$/.test(input) || /^October$/.test(input)) {
+    return true;
+  }
+  return false;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -75,9 +84,8 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  return str.match(/\w+\s/g);
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -90,9 +98,11 @@ The function should return a string containing the consonants in their original 
 For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
+
 let hangman = (str) => {
-  // Solution code here...
+  return str.replace(/[aeiou]/gi, '_');
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
