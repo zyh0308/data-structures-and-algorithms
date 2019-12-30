@@ -9,8 +9,13 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
-  // Solution code here...
+  return arr.map( str => {
+    
+    return str.charAt(0).toUpperCase() + str.slice(1, str.length);
+  });
 };
+  // Solution code here...
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -84,6 +89,16 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
+  let nameArr = [];
+  arr.forEach(data=> {
+
+  if (data.mass>77){
+    nameArr.push(data.name);
+  }
+    
+  });
+  let result = nameArr.toString().replace(',', " - ");
+  return result;
   // Solution code here...
 };
 
@@ -102,6 +117,12 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
+  let result = arr.sort((a,b) => {
+    if(a[property] < b[property]){
+      return -1;
+    }
+  });
+  return result;
   // Solution code here...
 };
 
@@ -118,8 +139,15 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
-// Solution code here...
+  if (url.substring(0,8) === 'https://'){
+    return true;
+  }
+  else {
+    return false;
+  }
 };
+// Solution code here...
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal

@@ -8,10 +8,9 @@ Write a function named oddValues that, given an array of integers as input, uses
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const oddValues = (arr) => {
-    return arr.filter (value =>value% 2 ===1)
-  // Solution code here...
-};
+const oddValues = (arr) => arr.filter( value => 
+  value % 2
+);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -25,10 +24,10 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-    consr regex = /[aeiou]/g;
-    return arr.filter(value => value.match(regex));
-  // Solution code here...
+  const regex = /[aeiou]/g;
+  return arr.filter(val => val.match(regex));
 };
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -112,8 +111,13 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 ------------------------------------------------------------------------------------------------ */
 
 const getStatName = (arr, minBaseStat) => {
-  // Solution code here...
+  let data = arr.filter(value => {
+    return value.baseStat > minBaseStat;
+  });
+  return data.map(elem => elem.stat.name)
 };
+  // Solution code here...
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -165,8 +169,16 @@ const characters = [
 ];
 
 const getCharactersWithoutChildren = (arr) => {
+  let parent = arr.filter(value => {
+    if (!value.children){
+      return value;
+    }
+  });
+  return parent.map(elem => elem)
+}
+
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
