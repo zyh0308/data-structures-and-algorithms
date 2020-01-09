@@ -2,7 +2,7 @@
 package code401challenges;
 
 public class ArrayShift{
-    public static int[] insertShiftArray(int[] arr, int value) {
+        public static int[] insertShiftArray(int[] arr, int value) {
 
 
         int n = arr.length;
@@ -19,7 +19,7 @@ public class ArrayShift{
                 newArr[i] = arr[i - 1];
             }
         }
-//
+
         return newArr;
 
 
