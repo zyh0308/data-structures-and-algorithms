@@ -12,5 +12,4 @@ public class BinarySearchTest {
         assertEquals(2, BinarySearch.binarySearch(input, 15));
     }
 
-
 }
