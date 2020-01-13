@@ -6,9 +6,6 @@ public class BinarySearch {
         int endPoint = inputArray.length -1;
         int startPoint=0;
         int midPoint=(endPoint-startPoint)/2;
-////        if (key>endPoint|| key<startPoint){
-//            return -1;
-//        }
 
         while (endPoint-startPoint>0){
             if (inputArray[midPoint] == key){
