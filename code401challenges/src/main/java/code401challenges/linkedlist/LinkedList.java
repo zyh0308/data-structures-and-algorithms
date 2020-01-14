@@ -2,20 +2,71 @@ package code401challenges.linkedlist;
 
 public class LinkedList {
 
-    public class Insert{
+    //global node head
 
-        class Node{
-            int data;
-            Node next;
+    Node head;
+
+// create node class
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
         }
+    }
 
-        public Node head =null;
-        public Node tail=null;
+    //insert method
 
+    public void insertToHead(int headValue){
 
+        Node HeadNode = new Node(headValue, null);
+
+        Node OldHead = this.head;
+
+        this.head = HeadNode;
+
+        this.head.next = OldHead;
 
     }
 
+    //includes method
 
+    public boolean include(int targetValue){
+        Node current=this.head;
+        while (current != null){
+
+            if (targetValue == current.data){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    // toString method
+    public String toString(){
+
+        Node current = this.head;
+
+        String overallStatement = " ";
+
+        while (current != null){
+
+            String stringStatement = "{ " + current.data + "  } => ";
+
+            overallStatement = overallStatement + stringStatement;
+
+            current = current.next;
+
+        }
+
+        return overallStatement + "null";
+
+    }
 
 }
+
+
+
