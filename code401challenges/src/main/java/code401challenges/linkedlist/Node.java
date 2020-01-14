@@ -1,8 +1,9 @@
 package code401challenges.linkedlist;
+import java.util.LinkedList;
 
 public class Node {
-    private int data;
-    private Node next;
+  int data;
+  Node next;
 
     public Node(int data,Node next){
         this.data=data;
