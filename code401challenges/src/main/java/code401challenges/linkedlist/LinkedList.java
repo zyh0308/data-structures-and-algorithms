@@ -66,6 +66,18 @@ public class LinkedList {
 
     }
 
+    //code challenge 6
+    //append
+
+    //insertBefore
+
+    //insertAfter
+
+
+
+
+
+
 }
 
 

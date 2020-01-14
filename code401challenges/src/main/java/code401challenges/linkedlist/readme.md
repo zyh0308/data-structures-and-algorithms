@@ -11,3 +11,8 @@ we need to build three method:
 ## Approach & Efficiency
 I did a lot of search online and watch the youtube video to figure out how to write the test for my code 
 ## API
+
+
+Code challenge 6
+
+![codechallenge06](code401challenges/img/06.jpg)
