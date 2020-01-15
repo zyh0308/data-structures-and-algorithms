@@ -15,7 +15,9 @@ I did a lot of search online and watch the youtube video to figure out how to wr
 
 Code challenge 6
 
-![06](main/java/code401challenges/img/06.jpg)
+![06](./code401challenges/src/main/java/code401challenges/img/06.jpg)
+
+
 
 Code challenge 7
 ![07](main/java/code401challenges/img/07.jpg)
