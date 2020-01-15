@@ -35,7 +35,6 @@ public class LinkedListTest {
         list.insertToHead(5);
         list.insertToHead(10);
 
-        // call fuction you already wrote (dont make a new one stupid)
         list.include(5);
 
         System.out.println(list.include(11));
@@ -62,7 +61,27 @@ public class LinkedListTest {
 
     }
 
+
+
+
+
+
+    //test for code challenge 7
+    @Test public void lastListTest(){
+        LinkedList list = new LinkedList();
+
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.insertToHead(15);
+        list.insertToHead(20);
+        list.insertToHead(25);
+        list.insertToHead(30);
+
+
+        assertEquals(20, list.lastList(4));
+
+    }
 }
 
 
-}
