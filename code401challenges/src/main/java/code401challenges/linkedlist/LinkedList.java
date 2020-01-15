@@ -50,11 +50,11 @@ public class LinkedList {
 
         Node current = this.head;
 
-        String overallStatement = " ";
+        String overallStatement = "";
 
         while (current != null){
 
-            String stringStatement = "{ " + current.data + "  } => ";
+            String stringStatement = "{ " + current.data + " } => ";
 
             overallStatement = overallStatement + stringStatement;
 
@@ -76,9 +76,31 @@ public class LinkedList {
 
 
 
+//code challenge 7
+
+    public int lastList (int k){
+        int counter=0;
+        Node countNode=head;
+        Node otherNode=head;
+        while (countNode != null){
+            counter++;
+            countNode=countNode.next;
+        }
+        while (counter-k>1){
+            counter--;
+            otherNode=otherNode.next;
+
+        }
+        return otherNode.data;
+    }
+
 
 
 }
+
+
+
+
 
 
 
