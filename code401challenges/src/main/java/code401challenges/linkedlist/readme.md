@@ -10,12 +10,7 @@ we need to build three method:
 
 ## Approach & Efficiency
 I did a lot of search online and watch the youtube video to figure out how to write the test for my code 
-## API
 
 
-Code challenge 6
 
-![06](main/java/code401challenges/img/06.jpg)
 
-Code challenge 7
-![07](main/java/code401challenges/img/07.jpg)
