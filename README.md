@@ -120,19 +120,17 @@ I did a lot of search online and watch the youtube video to figure out how to wr
 <hr>
 
 ## code challenge 07 
-![07](img/07.jpg)
 
 ### Challenge Summary
-<!-- Short summary or background information -->
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
 
 ### Challenge Description
-<!-- Description of the challenge -->
-
+The challenge part to me is how to track the kth number 
 ### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+we created a count node and other node also a counter to track kth number. 
 
 ### Solution
-<!-- Embedded whiteboard image -->
+![07](img/07.jpg)
 
 <hr>
 
