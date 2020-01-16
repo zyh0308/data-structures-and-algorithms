@@ -16,22 +16,136 @@ I did a lot of search online and watch the youtube video to figure out how to wr
 ## code challenge 01
 ![01](img/01.jpg)
 
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
 ## code challenge 02
 ![02](img/02.jpg)
 
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
 ## code challenge 03
 ![03](img/03.jpg)
+
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
 
 ## code challenge 04
 ![04](img/04.2.jpg)
 ![04](img/04.jpg)
 
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
 ## code challenge 05
 
 ![05](img/05.jpg)
 
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
 ## code challenge 06 
 ![06](img/06.jpg)
 
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+
+<hr>
+
 ## code challenge 07 
 ![07](img/07.jpg)
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 08
+![08](img/08.jpg)
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
