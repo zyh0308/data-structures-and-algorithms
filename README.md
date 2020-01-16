@@ -137,15 +137,13 @@ I did a lot of search online and watch the youtube video to figure out how to wr
 <hr>
 
 ## code challenge 08
-![08](img/08.jpg)
+
 ### Challenge Summary
-<!-- Short summary or background information -->
-
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. 
 ### Challenge Description
-<!-- Description of the challenge -->
-
+It was hard to figure out how to put nodes zip two list so that the nodes alternate between the two lists and return a reference to the head of the new list
 ### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+First we need to create a function to take two two list and know the size of two list; then we tried while loop to loop first list, inside the while loop create another while loop to loop the second list and add the value to the new list
 
 ### Solution
-<!-- Embedded whiteboard image -->
+![08](img/08.jpg)
