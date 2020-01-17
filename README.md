@@ -31,19 +31,18 @@ I did a lot of search online and watch the youtube video to figure out how to wr
 <hr>
 
 ## code challenge 02
-![02](img/02.jpg)
 
 ### Challenge Summary
-<!-- Short summary or background information -->
-
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 ### Challenge Description
-<!-- Description of the challenge -->
+The challenge was to get the value inserted into the middle of the array.
 
 ### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+For this we chose to create a new array that is the length of the old array + 1. We then start inserting the values of the old array into the new array with a for loop until if reaching the middle index. At the middle index the value is inserted into the array, then the next iteration the rest of the array is inputed.
 
+while loop efficiency is 0 (n^2)
 ### Solution
-<!-- Embedded whiteboard image -->
+![02](img/02.jpg)
 
 <hr>
 
