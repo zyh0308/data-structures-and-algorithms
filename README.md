@@ -47,26 +47,25 @@ while loop efficiency is 0 (n^2)
 <hr>
 
 ## code challenge 03
-![03](img/03.jpg)
 
 
 ### Challenge Summary
-<!-- Short summary or background information -->
-
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 ### Challenge Description
-<!-- Description of the challenge -->
+Given an array of integers and an integer, implement a function to take in that array and find whether the integer is in the array. If it is, return the index at which the integer is located at; if not, return -1.
+
 
 ### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Begin by finding an initial midpoint of the array as-is. If the integer is immediately found, return the index of the integer. If not, go into a while loop that attempts to find the integer. If the integer is smaller than the midpoint, calculate a new midpoint that is based on the left half of the existing array boundaries. If the integer is larger, calculate the midpoint for the right half. If integer is equal to new midpoint, return the index. If not, run the while loop again.
+
 
 ### Solution
-<!-- Embedded whiteboard image -->
+![03](img/03.jpg)
 
 <hr>
 
 ## code challenge 04
-![04](img/04.2.jpg)
-![04](img/04.jpg)
+
 
 ### Challenge Summary
 <!-- Short summary or background information -->
@@ -78,7 +77,8 @@ while loop efficiency is 0 (n^2)
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ### Solution
-<!-- Embedded whiteboard image -->
+![04](img/04.2.jpg)
+![04](img/04.jpg)
 
 <hr>
 
