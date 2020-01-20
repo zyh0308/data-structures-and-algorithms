@@ -95,7 +95,11 @@ public class LinkedList {
         return otherNode.data;
     }
 
+// code challenge 8
 
+
+
+    
 
 }
 
