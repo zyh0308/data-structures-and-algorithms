@@ -62,6 +62,92 @@ public class LinkedListTest {
     }
 
 
+    //test for code challenge 6
+
+    @Test public void appendTest(){
+        LinkedList list =new LinkedList();
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.append(25);
+        LinkedList.Node current =list.head;
+        while(current.next != null){
+            current=current.next;
+
+        }
+
+        assertEquals(25,current.data);
+
+
+
+    }
+
+    @Test public void insertBeforeTest(){
+        LinkedList list =new LinkedList();
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.insertBefore(5,9999);
+        int [] testArr= new int[]{10, 9999,5,2};
+        LinkedList.Node current =list.head;
+        int i=0;
+        while (current!=null){
+            assertEquals(testArr[i],current.data);
+            i++;
+            current=current.next;
+        }
+
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void insertBeforeExceptionTest(){
+        LinkedList list =new LinkedList();
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.insertBefore(111,9999);
+    }
+
+
+    @Test
+    public void insertBeforeHeadTest(){
+        LinkedList list =new LinkedList();
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.insertBefore(10,9999);
+        assertEquals(9999,list.head.data);
+    }
+
+    @Test
+    public void insertAfterTest() {
+        LinkedList list = new LinkedList();
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.insertAfter(5, 9999);
+        int[] testArr = new int[]{10, 5, 9999, 2};
+        LinkedList.Node current = list.head;
+        int i = 0;
+        while (current != null) {
+            assertEquals(testArr[i], current.data);
+            i++;
+            current = current.next;
+
+        }
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void insertAfterExceptionTest(){
+        LinkedList list =new LinkedList();
+        list.insertToHead(2);
+        list.insertToHead(5);
+        list.insertToHead(10);
+        list.insertBefore(111,9999);
+    }
+
+
 
 
 
@@ -77,7 +163,6 @@ public class LinkedListTest {
         list.insertToHead(20);
         list.insertToHead(25);
         list.insertToHead(30);
-
 
         assertEquals(20, list.lastList(4));
 

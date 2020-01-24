@@ -4,18 +4,25 @@ public class LinkedList {
 
     //global node head
 
-    Node head;
+    public Node head;
 
 // create node class
-    class Node {
+    public class Node {
         int data;
         Node next;
 
-        Node(int data, Node next) {
+        public Node(int data, Node next) {
             this.data = data;
             this.next = next;
         }
-    }
+
+        public Node(int data){
+            this.data=data;
+            this.next=null;
+        }
+
+
+}
 
     //insert method
 
@@ -68,11 +75,51 @@ public class LinkedList {
 
     //code challenge 6
     //append
-
+    public void append(int data) {
+        Node newNode = new Node(data);
+        Node firstNode = head;
+        while (firstNode.next != null) {
+            firstNode = firstNode.next;
+        }
+        firstNode.next = newNode;
+    }
 
     //insertBefore
 
+    public void insertBefore(int target, int data) {
+        Node newNode = new Node(data);
+
+        Node firstNode = head;
+        if (head.data==target){
+            head=new Node(data,head);
+            return;
+        }
+        while (firstNode.next != null && firstNode.next.data!= target) {
+            firstNode = firstNode.next;
+        }
+        if (firstNode.next ==null){
+            throw new IllegalArgumentException();
+        }
+        newNode.next = firstNode.next;
+        firstNode.next = newNode;
+    }
+
     //insertAfter
+
+    public void insertAfter(int target, int data) {
+        Node newNode = new Node(data);
+        Node firstNode = head;
+        while (firstNode.data != target) {
+            firstNode = firstNode.next;
+        }
+        if (firstNode==null){
+            throw new IllegalArgumentException();
+        }
+        newNode.next = firstNode.next;
+        firstNode.next = newNode;
+    }
+
+
 
 
 
