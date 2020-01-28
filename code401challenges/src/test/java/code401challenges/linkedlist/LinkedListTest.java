@@ -167,6 +167,23 @@ public class LinkedListTest {
         assertEquals(20, list.lastList(4));
 
     }
+
+    //test for code challenge 8
+
+    @Test public void mergeListTest(){
+
+        LinkedList listOne = new LinkedList();
+
+        listOne.insertToHead(2);
+        listOne.insertToHead(5);
+        listOne.insertToHead(10);
+        LinkedList listTwo= new LinkedList();
+        listTwo.insertToHead(15);
+        listTwo.insertToHead(20);
+        listTwo.insertToHead(25);
+
+        assertEquals("{ 10 } => { 25 } => { 5 } => { 20 } => { 2 } => { 15 } => null", LinkedList.mergeLists(listOne, listTwo).toString() );
+    }
 }
 
 
