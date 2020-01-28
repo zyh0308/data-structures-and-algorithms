@@ -134,3 +134,25 @@ First we need to create a function to take two two list and know the size of two
 
 ### Solution
 ![08](img/08.jpg)
+
+
+## code challenge 16
+
+### Challenge Summary
+Write a function called FizzBuzzTree which takes a tree as an argument.
+
+### Challenge Description
+Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+### Approach & Efficiency
+I started to write down the math solution in Java first and then implement the tree into my method. 
+And I go back to my Node class change it to generic to make the Array Listcan take anything (String, int...)
+Then I use recursion way on it 
+My time complexity is reduced to O(n).
+
+### Solution
+
