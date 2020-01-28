@@ -8,12 +8,13 @@ import static org.junit.Assert.*;
 
 public class TreeTest {
 
-    @Test public void treeTest(){
-        Node root =new Node(10, new Node(20),new Node(3));
-        Tree t= new Tree(root);
-        assertEquals(10,t.root.value);
-        assertEquals(20,t.root.left.value);
-        assertEquals(3,t.root.right.value);
+    @Test
+    public void treeTest() {
+        Node root = new Node(10, new Node(20), new Node(3));
+        Tree t = new Tree(root);
+        assertEquals(10, t.root.value);
+        assertEquals(20, t.root.left.value);
+        assertEquals(3, t.root.right.value);
 
     }
 
@@ -21,8 +22,8 @@ public class TreeTest {
     @Test
     public void traversalsPreOrder() {
 
-        Node root =new Node(10, new Node(20),new Node(3));
-        Tree t= new Tree(root);
+        Node root = new Node(10, new Node(20), new Node(3));
+        Tree t = new Tree(root);
         t.traversalsPreOrder();
 
     }
@@ -30,8 +31,8 @@ public class TreeTest {
     @Test
     public void traversalsPostOrder() {
 
-        Node root =new Node(10, new Node(20),new Node(3));
-        Tree t= new Tree(root);
+        Node root = new Node(10, new Node(20), new Node(3));
+        Tree t = new Tree(root);
         t.traversalsPostOrder();
 
 
@@ -40,8 +41,9 @@ public class TreeTest {
     @Test
     public void traversalsInOrder() {
 
-        Node root =new Node(10, new Node(20),new Node(3));
-        Tree t= new Tree(root);
+        Node root = new Node(10, new Node(20), new Node(3));
+        Tree t = new Tree(root);
         t.traversalsInOrder();
     }
+}
 

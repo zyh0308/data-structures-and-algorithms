@@ -144,11 +144,28 @@ public class LinkedList {
 
 // code challenge 8
 
+    public static LinkedList mergeLists(LinkedList listOne, LinkedList listTwo)
+    {
+        Node listOneCurr = listOne.head;
+        Node listTwoCurr = listTwo.head;
 
+
+        while (listOneCurr != null && listTwoCurr != null)
+        {
+            listTwo.head = listTwoCurr.next;
+            listTwoCurr.next= listOneCurr.next;
+            listOneCurr.next = listTwoCurr;
+            listOneCurr = listTwoCurr.next;
+            listTwoCurr = listTwo.head;
+        }
+        return listOne;
+    }
+
+}
 
     
 
-}
+
 
 
 
