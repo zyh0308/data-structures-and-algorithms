@@ -2,11 +2,11 @@ package code401challenges.tree;
 
 import java.util.ArrayList;
 
-public class Tree {
+public class Tree<E> {
 
-    Node root;
+    Node<E> root;
 
-    public Tree(Node root){
+    public Tree(Node<E> root){
         this.root=root;
 
     }
@@ -23,7 +23,7 @@ public class Tree {
         ArrayList<Integer> result = new ArrayList<>();
         return traversalsPostOrder(this.root, result);
     }
-    private ArrayList<Integer> traversalsPreOrder(Node node, ArrayList<Integer>result){
+    private ArrayList<Integer> traversalsPreOrder(Node<E> node, ArrayList<Integer>result){
         if (node ==null) {
             return result;
         }else{
@@ -41,7 +41,7 @@ public class Tree {
         ArrayList<Integer> result = new ArrayList<>();
         return traversalsPostOrder(this.root, result);
     }
-    private ArrayList<Integer> traversalsPostOrder(Node node, ArrayList<Integer>result){
+    private ArrayList<Integer> traversalsPostOrder(Node<E> node, ArrayList<Integer>result){
         if (node ==null) {
             return result;
         } else{
@@ -57,7 +57,7 @@ public class Tree {
         ArrayList<Integer> result = new ArrayList<>();
         return traversalsInOrder(this.root, result);
     }
-    private ArrayList<Integer> traversalsInOrder(Node node, ArrayList<Integer>result){
+    private ArrayList<Integer> traversalsInOrder(Node<E> node, ArrayList<Integer>result){
         if (node ==null) {
             return result;
         }else{
