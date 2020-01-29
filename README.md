@@ -239,6 +239,8 @@ My time complexity is reduced to O(n).
 
 ### Solution
 
+![16](img/16.jpg)
+
 <hr>
 
 ## code challenge 17
@@ -255,3 +257,4 @@ And then thought about thow to make the queue works in a tree
 First check the tree is empty, if not make sure if the queue is empty if not go through the while loop
 
 ### Solution
+
