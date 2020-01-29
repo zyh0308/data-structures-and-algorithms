@@ -156,3 +156,17 @@ My time complexity is reduced to O(n).
 
 ### Solution
 
+## code challenge 17
+
+### Challenge Summary
+Write a breadth first traversal method which takes a Binary Tree as its unique input.
+
+### Challenge Description
+Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+### Approach & Efficiency
+I started implmenting the queue method first
+And then thought about thow to make the queue works in a tree
+First check the tree is empty, if not make sure if the queue is empty if not go through the while loop
+
+### Solution
