@@ -135,6 +135,89 @@ First we need to create a function to take two two list and know the size of two
 ### Solution
 ![08](img/08.jpg)
 
+<hr>
+
+## code challenge 11
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 12
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 13
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+
+## code challenge 14
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 15
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
 
 ## code challenge 16
 
@@ -157,3 +240,21 @@ My time complexity is reduced to O(n).
 ### Solution
 
 ![16](img/16.jpg)
+
+<hr>
+
+## code challenge 17
+
+### Challenge Summary
+Write a breadth first traversal method which takes a Binary Tree as its unique input.
+
+### Challenge Description
+Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+### Approach & Efficiency
+I started implmenting the queue method first
+And then thought about thow to make the queue works in a tree
+First check the tree is empty, if not make sure if the queue is empty if not go through the while loop
+
+### Solution
+
