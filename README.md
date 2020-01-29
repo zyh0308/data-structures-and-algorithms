@@ -135,6 +135,89 @@ First we need to create a function to take two two list and know the size of two
 ### Solution
 ![08](img/08.jpg)
 
+<hr>
+
+## code challenge 11
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 12
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 13
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+
+## code challenge 14
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
+## code challenge 15
+
+### Challenge Summary
+<!-- Short summary or background information -->
+
+### Challenge Description
+<!-- Description of the challenge -->
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+### Solution
+<!-- Embedded whiteboard image -->
+
+<hr>
+
 
 ## code challenge 16
 
@@ -155,6 +238,8 @@ Then I use recursion way on it
 My time complexity is reduced to O(n).
 
 ### Solution
+
+<hr>
 
 ## code challenge 17
 
