@@ -156,3 +156,4 @@ My time complexity is reduced to O(n).
 
 ### Solution
 
+![16](img/16.jpg)
