@@ -55,5 +55,27 @@ public class TreeTest {
     }
 
 
+
+    //           2
+    //     7           5
+    // 2       6             9
+    //      5     11       4
+
+
+    @Test
+    public void findMax() {
+        Node<Integer> root = new Node<> (2);
+        Tree<Integer> t=new Tree<> (root);
+        assertEquals(2,t.findMax());
+
+    }
+
+    @Test
+    public void findMaxTestTwo(){
+        Node<Integer> root =new Node<>(2,new Node<>(7, new Node<>(2),new Node<>(6,new Node<>(5),new Node<>(11))),new Node<>(5,null,new Node<>(9,new Node<>(4),null)));
+        Tree<Integer> t=new Tree<> (root);
+        assertEquals(11,t.findMax());
+
+    }
 }
 
