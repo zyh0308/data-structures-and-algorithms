@@ -102,5 +102,34 @@ public class Tree<E>{
 
 
     }
+    //find-maximum-binary-tree
+
+    public int findMax(){
+        if (this.root==null) {
+            throw new IllegalStateException();
+        }
+        return findMax(this.root);
+        }
+
+
+
+        private int findMax(Node node) {
+
+        int max = (Integer) node.value;
+        if (node.left!=null){
+           max= Math.max(max,findMax(node.left));
+
+        }
+        if (node.right!= null){
+           max= Math.max(max,findMax(node.right));
+        }
+
+        return max;
+
+
+
+    }
+
+
 
 }
