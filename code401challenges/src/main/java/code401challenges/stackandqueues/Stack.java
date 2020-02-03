@@ -12,7 +12,8 @@ public class Stack{
 
     public boolean isEmpty(){
         if (this.top == null){
-            throw new EmptyStackException();
+//
+            return true;
 
         }else{
             return false;
