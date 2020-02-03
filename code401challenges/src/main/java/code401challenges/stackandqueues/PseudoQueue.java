@@ -1,24 +1,24 @@
 package code401challenges.stackandqueues;
 
-public class PseudoQueue {
+public class PseudoQueue<E> {
 
-        public Stack stackOne;
+        public Stack<E> stackOne;
 
-        public Stack stackTwo;
+        public Stack<E> stackTwo;
 
         public PseudoQueue(){
-            stackOne = new Stack();
-            stackTwo = new Stack();
+            stackOne = new Stack<>();
+            stackTwo = new Stack<>();
         }
 
-        public void enqueue(int value){
+        public void enqueue(E value){
             while(!stackTwo.isEmpty()) {
                 stackOne.push(stackTwo.pop());
             }
             stackOne.push(value);
         }
 
-        public int dequeue(){
+        public E dequeue(){
             while(!stackOne.isEmpty()){
                stackTwo.push(stackOne.pop());
             }
