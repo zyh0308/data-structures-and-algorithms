@@ -2,8 +2,8 @@ package code401challenges.stackandqueues;
 
 import java.util.EmptyStackException;
 
-public class Stack{
-    Node top;
+public class Stack<E>{
+    Node<E> top;
 
     public Stack(){
         this.top=null;
@@ -21,15 +21,15 @@ public class Stack{
 
     }
 
-    public void push(int data ){
-        Node temp = new Node(data, this.top);
+    public void push(E data ){
+        Node<E>  temp= new Node<>(data, this.top);
         this.top=temp;
 
     }
 
-    public int pop() {
+    public E pop() {
         if (!this.isEmpty()) {
-            Node temp = this.top;
+            Node<E> temp = this.top;
             this.top = top.next;
             return temp.data;
 
@@ -41,7 +41,7 @@ public class Stack{
 
     }
 
-    public int peek(){
+    public E peek(){
         if(!this.isEmpty()){
             return top.data;
         }else{

@@ -2,9 +2,9 @@ package code401challenges.stackandqueues;
 
 import java.util.NoSuchElementException;
 
-public class Queue {
-    Node front;
-    Node back;
+public class Queue<E> {
+    Node<E> front;
+    Node<E> back;
 
     public Queue(){
         this.front=null;
@@ -22,8 +22,8 @@ public class Queue {
 
     }
 
-    public void enqueue(int data){
-        Node temp=new Node(data,null);
+    public void enqueue(E data){
+        Node<E> temp=new Node<E>(data,null);
         if (this.isEmpty()) {
             this.front = this.back = temp;
         }
@@ -40,16 +40,16 @@ public class Queue {
 
     }
 
-    public int dequeue(){
+    public E dequeue(){
         if(this.isEmpty()){
             throw new NoSuchElementException();
 
         }else if (this.front==this.back){
-            Node temp =this.front;
+            Node<E> temp =this.front;
             this.front=this.back=null;
             return temp.data;
         }else{
-            Node temp=this.front;
+            Node<E> temp=this.front;
             this.front=this.front.next;
             return temp.data;
 
@@ -58,7 +58,7 @@ public class Queue {
 
     }
 
-    public int peek(){
+    public E peek(){
         if(this.isEmpty()){
             throw new NoSuchElementException();
 
