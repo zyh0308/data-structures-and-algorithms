@@ -25,4 +25,4 @@ Sample Array: [8,4,23,42,16,15]
 
 
 ### Solution
-![insertion](src/main/resources/assets/insertion.jpg)
+![insertion](assets/insertion.jpg)

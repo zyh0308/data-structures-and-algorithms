@@ -1,7 +1,7 @@
 package code401challengespart2;
 
-public class InsertionSort {
-    public int[] insertionsort(int [] arr){
+public class Sorting {
+    public int[] InsertionSort(int [] arr){
 
         for (int i = 1; i < arr.length; ++i) {
             int j = i - 1;
