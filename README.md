@@ -258,3 +258,26 @@ First check the tree is empty, if not make sure if the queue is empty if not go 
 
 ### Solution
 
+![17](img/17.jpg)
+
+<hr>
+
+## code challenge 18
+
+### Challenge Summary
+Write an instance method called find-maximum-value. 
+
+### Challenge Description
+Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+### Approach & Efficiency
+1. create a public method called findmax to hold base case when node root is null and throw an exception. otherwise call the private method 
+2. create a private method called findmax too 
+3. set max as the interger to hold maxmium value 
+4. using math method Math.max to compare two values if left node and right node is not null
+5. compare the whole tree 
+6. return max 
+
+### Solution
+
+![18](img/18.jpg)
