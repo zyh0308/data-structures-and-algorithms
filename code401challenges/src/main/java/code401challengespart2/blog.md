@@ -75,9 +75,7 @@ Sample Array: [8,4,23,42,16,15]
 
 
 ### Efficiency
-
-Time:
-
+Time: O(n^2)
 
 ### Solution
 ![merge](resources/assets/27.jpg)
