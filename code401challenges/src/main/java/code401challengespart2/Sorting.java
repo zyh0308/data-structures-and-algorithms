@@ -73,5 +73,38 @@ public class Sorting {
 
     }
 
+    // code challenges 28 quick sort
+
+    public static void quickSort(int[] array, int left, int right) {
+
+        if (left < right) {
+            int position = Sorting.partition(array, left, right);
+            Sorting.quickSort(array, left, position - 1);
+            Sorting.quickSort(array, position + 1, right);
+        }
+    }
+
+    public static int partition(int[] array, int left, int right) {
+
+        int pivot = array[right];
+        int low = left - 1;
+
+        for (int i = left; i< right; i++) {
+            if (array[i] <= pivot) {
+                low++;
+                Sorting.swap(array, i, low);
+            }
+        }
+        Sorting.swap(array, right, low + 1);
+        return low + 1;
+    }
+
+    public static void swap(int[] array, int j, int low) {
+        int temp;
+        temp = array[j];
+        array[j] = array[low];
+        array[low] = temp;
+    }
+
 
 }
