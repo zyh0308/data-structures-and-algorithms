@@ -1,5 +1,6 @@
-package code401challengespart2;
+package code401challengespart2.sorting;
 
+import code401challengespart2.sorting.Sorting;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
