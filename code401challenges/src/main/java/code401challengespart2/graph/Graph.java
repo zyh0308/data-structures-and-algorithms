@@ -1,6 +1,12 @@
 package code401challengespart2.graph;
 
-import java.util.*;
+
+import code401challenges.stackandqueues.Queue;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Set;
 
 /////// followed the code review during the class ///////
 
@@ -9,6 +15,7 @@ public class Graph<T, W> {
     private HashMap<T, LinkedList<Edge<T, W>>> GraphNodes;
 
     public Graph() {
+
         GraphNodes = new HashMap<>();
     }
 
@@ -20,7 +27,7 @@ public class Graph<T, W> {
     }
 
     public void addEdge(T firstNode, T secondValue) throws IllegalArgumentException {
-        if(!GraphNodes.containsKey(firstNode) || !GraphNodes.containsKey(secondValue))
+        if (!GraphNodes.containsKey(firstNode) || !GraphNodes.containsKey(secondValue))
             throw new IllegalArgumentException("one of the node is not in the graph");
 
         GraphNodes.get(firstNode).add(new Edge<T, W>(secondValue));
@@ -28,7 +35,7 @@ public class Graph<T, W> {
     }
 
     public void addEdge(T firstNode, T secondValue, W weight) throws IllegalArgumentException {
-        if(!GraphNodes.containsKey(firstNode) || !GraphNodes.containsKey(secondValue))
+        if (!GraphNodes.containsKey(firstNode) || !GraphNodes.containsKey(secondValue))
             throw new IllegalArgumentException("One of node is not in the graph.");
 
         GraphNodes.get(firstNode).add(new Edge<T, W>(secondValue, weight));
@@ -36,14 +43,46 @@ public class Graph<T, W> {
     }
 
     public HashSet<T> getNodes() {
+
         return new HashSet<>(GraphNodes.keySet());
     }
 
-    public LinkedList<Edge<T, W>> getNeighbors(T node)throws IllegalArgumentException {
-        if(!GraphNodes.containsKey(node))
+    public LinkedList<Edge<T, W>> getNeighbors(T node) throws IllegalArgumentException {
+        if (!GraphNodes.containsKey(node))
             throw new IllegalArgumentException("it's not in the graph");
 
         return GraphNodes.get(node);
+    }
+
+    //bread-first
+
+    public Queue<T> breadthFirst (T node)throws IllegalArgumentException{
+        if(!GraphNodes.containsKey(node))
+            throw new IllegalArgumentException("The provided node is not in the graph");
+
+
+        Queue<T> processNodes = new Queue<>();
+
+        HashSet<T> nodesSeen = new HashSet<>();
+
+        Queue<T> results = new Queue<>();
+
+        nodesSeen.add(node);
+        processNodes.enqueue(node);
+        results.enqueue(node);
+
+        while (!processNodes.isEmpty()) {
+            LinkedList<Edge<T, W>> edges = GraphNodes.get(processNodes.dequeue());
+            for (Edge<T, W> edge : edges) {
+                if (!nodesSeen.contains(edge.getValue())) {
+                    processNodes.enqueue(edge.getValue());
+                    results.enqueue(edge.getValue());
+                    nodesSeen.add(edge.getValue());
+                }
+            }
+        }
+
+        return results;
     }
 
     public long getSize() {

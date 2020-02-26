@@ -68,8 +68,27 @@ public class Queue<E> {
 
     }
 
+    ///https://stackoverflow.com/questions/31818773/working-with-a-tostring-and-a-queue-in-java ////
 
+    @Override
+    public String toString() {
 
+        if (isEmpty()) {
+            return " ";
+        }
 
+        StringBuilder sb = new StringBuilder();
+        Node<E> next =front;
 
+        sb.append(next.data);
+        next = next.next;
+
+        while(next != null){
+            sb.append(" => ").append(next.data);
+            next = next.next;
+        }
+
+        return sb.toString();
+
+    }
 }
