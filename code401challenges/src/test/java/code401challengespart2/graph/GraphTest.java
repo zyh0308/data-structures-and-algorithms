@@ -21,7 +21,7 @@ public class GraphTest {
         twitters.addEdge("Anna", "Melo", 1);
         twitters.addNode("Lily");
         twitters.addEdge("Melo", "Lily", 1);
-        twitters.addEdge("Lily", "Seattle", 1);
+        twitters.addEdge("Lily", "Anna", 1);
         twitters.addNode("Pete");
         twitters.addEdge("Anna", "Pete", 2);
         twitters.addEdge("Pete", "Joey", 3);
@@ -59,15 +59,21 @@ public class GraphTest {
 
     @Test
     public void getNeighborsTest() {
-        Assert.assertEquals("Joey",
-                twitters.getNeighbors("Anna").get(0).getValue());
-        Assert.assertEquals(0,
-                twitters.getNeighbors("lucy").size());
-        Assert.assertEquals((Integer) 2,
-                gasStation.getNeighbors(1).get(0).getValue());
-        Assert.assertEquals(0,
-                gasStation.getNeighbors(6).size());
+        Assert.assertEquals("Joey", twitters.getNeighbors("Anna").get(0).getValue());
+        Assert.assertEquals(0, twitters.getNeighbors("lucy").size());
+        Assert.assertEquals((Integer) 12, gasStation.getNeighbors(10).get(0).getValue());
+        Assert.assertEquals(6, gasStation.getNodes().size());
     }
+
+    @Test
+    public void breadthFirstTest() {
+        Assert.assertEquals("Anna => Joey => Melo => Lily => Pete", twitters.breadthFirst("Anna").toString());
+        Assert.assertEquals("Joey => Anna => Pete => Melo => Lily", twitters.breadthFirst("Joey").toString());
+        Assert.assertEquals("Melo => Anna => Lily => Joey => Pete", twitters.breadthFirst("Melo").toString());
+        Assert.assertEquals("Lily => Melo => Anna => Joey => Pete", twitters.breadthFirst("Lily").toString());
+        Assert.assertEquals("Pete => Anna => Joey => Melo => Lily", twitters.breadthFirst("Pete").toString());
+    }
+
 }
 
 
