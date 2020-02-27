@@ -21,9 +21,9 @@ public class GraphTest {
         twitters.addEdge("Anna", "Melo", 1);
         twitters.addNode("Lily");
         twitters.addEdge("Melo", "Lily", 1);
-        twitters.addEdge("Lily", "Anna", 1);
+//        twitters.addEdge("Lily", "Anna", 1);
         twitters.addNode("Pete");
-        twitters.addEdge("Anna", "Pete", 2);
+//        twitters.addEdge("Anna", "Pete", 2);
         twitters.addEdge("Pete", "Joey", 3);
         twitters.addNode("lucy");
 
@@ -67,11 +67,14 @@ public class GraphTest {
 
     @Test
     public void breadthFirstTest() {
-        Assert.assertEquals("Anna => Joey => Melo => Lily => Pete", twitters.breadthFirst("Anna").toString());
-        Assert.assertEquals("Joey => Anna => Pete => Melo => Lily", twitters.breadthFirst("Joey").toString());
-        Assert.assertEquals("Melo => Anna => Lily => Joey => Pete", twitters.breadthFirst("Melo").toString());
-        Assert.assertEquals("Lily => Melo => Anna => Joey => Pete", twitters.breadthFirst("Lily").toString());
-        Assert.assertEquals("Pete => Anna => Joey => Melo => Lily", twitters.breadthFirst("Pete").toString());
+        Assert.assertEquals("Anna => Joey => Melo => Pete => Lily", twitters.breadthFirst("Anna").toString());
+
+    }
+
+    @Test
+    public void depthFirstTest() {
+        Assert.assertEquals("[Anna, Melo, Lily, Joey, Pete]", twitters.depthFirst("Anna").toString());
+
     }
 
 }
